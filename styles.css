@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+
+    @font-face {
+        font-family: "Roboto-Regular";
+        src: url('/assets/fonts/Roboto-Regular.ttf');
+    }
+
+    font-family: "Roboto-Regular", Arial, Helvetica, sans-serif
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+picture, img {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    background: #FFFFFF;
+}
+
+.mobile-image img {
+    width: 100%;
+}
+
+.newsletter-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container {
+    padding: 1em;
+}
+
+.desktop-image {
+    display: none;
+}
+
+.newsletter-list li {
+    list-style-type: none;
+    display: flex;
+    gap: 0.5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+input {
+    border: 1px solid gray;
+    height: 3em;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+button {
+    border: transparent;
+    height: 3em;
+    color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(to right, #FF5478, #FF693E);
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .newsletter-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: fit-content;
+        height: 90%;
+        margin: auto;
+        padding: 5em;
+        background: #000000;
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FFFFFF;
+        padding: 2em;
+        border-radius: 1em;
+    }
+
+    .mobile-image {
+        display: none;
+    }
+
+    .desktop-image {
+        display: block;
+        height: 100%;
+    }
+
+    h1{
+        font-size: 2.5em
+    }
+
+    .newsletter-content {
+        padding: 0 1em;
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+
+  <title>Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="newsletter-container">
+      <!--mobile image-->
+      <div class="mobile-image">
+        <picture>
+          <source srcset="assets/images/illustration-sign-up-desktop.svg" media="(min-width: 768px)" />
+          <source srcset="assets/images/illustration-sign-up-mobile.svg" />
+          <img src="assets/images/illustration-sign-up-desktop.svg" alt="Sign up illustration" />
+        </picture>
+      </div>
+      <div class="form-container">
+        <div class="newsletter-content">
+          <h1>Stay updated!</h1>
+          <p> Join 60,000+ product managers receiving monthly updates on:</p>
+          <br/ >
+          <ul class="newsletter-list">
+            <li><img src="assets/images/icon-list.svg" /> Product discovery and building what matters</li><br/>
+            <li><img src="assets/images/icon-list.svg" /> Measuring to ensure updates are a success</li><br />
+            <li><img src="assets/images/icon-list.svg" /> And much more!</li><br />
+          </ul>
+          <form>
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email" />
+            <button type="button" id="subscribe">Subscribe to monthly newsletter</button>
+          </form>
+        </div>
+          <div class="desktop-image">
+            <picture>
+              <source srcset="assets/images/illustration-sign-up-desktop.svg" media="(min-width: 768px)" />
+              <source srcset="assets/images/illustration-sign-up-mobile.svg" />
+              <img src="assets/images/illustration-sign-up-desktop.svg" alt="Sign up illustration" />
+            </picture>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- Sign-up form start
+
+    Email address
+  email@company.com
+
+  Subscribe to monthly newsletter
+
+  Thanks for subscribing!
+
+  A confirmation email has been sent to ash@loremcompany.com.
+  Please open it and click the button inside to confirm your subscription.
+
+  Dismiss message
+
+  
+  -->
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
