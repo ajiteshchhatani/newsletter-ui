@@ -101,6 +101,23 @@ button:hover {
     background: linear-gradient(to right, #FF5478, #FF693E);
 }
 
+.label-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label-container span {
+    color: red;
+    font-size: 0.75em;
+    font-weight: bold;
+}
+
+.invalid {
+    border: 1px solid red;
+    background-color: #FFE8E6;
+}
+
 @media (min-width: 768px) {
     .container {
         display: flex;

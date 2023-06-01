@@ -46,10 +46,13 @@
             <li><img src="assets/images/icon-list.svg" /> Measuring to ensure updates are a success</li><br />
             <li><img src="assets/images/icon-list.svg" /> And much more!</li><br />
           </ul>
-          <form>
-            <label for="email">Email address</label>
+          <form novalidate>
+            <div class="label-container">
+              <label for="email">Email address</label>
+              <span id="errorText"></span>
+            </div>
             <input type="email" name="email" id="email" />
-            <button type="button" id="subscribe">Subscribe to monthly newsletter</button>
+            <button id="subscribe">Subscribe to monthly newsletter</button>
           </form>
         </div>
           <div class="desktop-image">
@@ -63,6 +66,7 @@
       </div>
     </div>
   </div>
+  <script src="./validation_script.js"></script>
 </body>
 </html>
 
